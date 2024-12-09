@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgb(32, 44, 136) 0%,
+    rgba(9, 9, 121, 1) 15%,
+    rgba(0, 2, 18, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  color: white;
+  margin: 2rem 0;
+}
+
+main {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em 2em;
+  width: 100%;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+/* Candidate Card Styles */
+.candidate-card {
+  background-color: #000;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 350px;
+  margin: 2rem auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.candidate-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.candidate-card h2 {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.candidate-card p {
+  margin: 0.5rem 0;
+}
+
+.candidate-card a {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-danger:hover {
+  background-color: darkred;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-success:hover {
+  background-color: darkgreen;
+}
+
+/* Saved Candidates Table Styles */
+.candidate-table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  color: white;
+  font-size: 1rem;
+}
+
+.candidate-table th,
+.candidate-table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.candidate-table th {
+  background-color: #000;
+  font-weight: bold;
+}
+
+.candidate-table tr:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+.candidate-table tr:nth-child(even) {
+  background-color: #333;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.reject-button {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.reject-button:hover {
+  color: darkred;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
